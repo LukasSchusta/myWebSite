@@ -1,0 +1,76 @@
+
+body{
+    height: 96vh;
+    
+    background-color: #0f2b35;
+    
+}
+.name{
+    font-size: 2.7rem;
+    text-align: center;
+    color: white;
+    
+}
+
+main {
+    text-align: center;
+}
+
+.pix{
+    font-size: 2rem;
+    margin: 3px;
+}
+
+.pix-qr-code {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin: 0 auto;
+    width: 400px;
+    border: 1px solid black;
+
+    border-radius: 20px 0px 20px 0;
+    
+}
+
+.pix-qr-code-img {
+    width: 75%;
+}
+
+.chave-pix {
+
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+.items {
+    background-color: #fff;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 20px 0px 20px 0;
+    animation: is-boucing 4s ease-in-out alternate infinite;
+}
+
+.inline{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+}
+
+.inline p{
+    margin-top: 3px;
+    font-size: 1rem;
+}
+
+@keyframes is-boucing{
+    to{
+        transform: translateY(5px);
+    }
+}
