@@ -2,7 +2,7 @@
 body{
     height: 96vh;
     
-    background-color: #0f2b35;
+    background-color: #212121;
     
 }
 .name{
@@ -25,19 +25,31 @@ main {
     background-color: rgb(255, 255, 255);
     color: black;
     margin: 0 auto;
-    width: 400px;
+    width: 500px;
     border: 1px solid black;
 
     border-radius: 20px 0px 20px 0;
     
 }
 
+
 .pix-qr-code-img {
     width: 75%;
 }
 
 .chave-pix {
+    cursor: pointer;
+    display: inline-block;
+}
 
+.copiar{
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.copy{
+    vertical-align: top;
 }
 
 .link {
