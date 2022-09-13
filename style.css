@@ -3,15 +3,17 @@
 body{
     height: 96vh;
     
-    background-color: #212121;
+    background-color: #0a1520;
     
 }
 .name{
     font-size: 2.7rem;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
     text-align: center;
     color: white;
     margin: 30px;
     font-family: 'Poppins', sans-serif;
+    
     
 }
 
@@ -30,7 +32,7 @@ main {
     margin: 0 auto;
     max-width: 500px;
     border: 1px solid black;
-
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
     border-radius: 20px 0px 20px 0;
     
 }
@@ -43,6 +45,9 @@ main {
 .chave-pix {
     cursor: pointer;
     display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 0px 20px 0px 20px;
 }
 
 .copiar{
@@ -69,10 +74,10 @@ main {
 .items {
     background-color: #fff;
     max-width: 400px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
     margin: 0 auto;
     margin-top: 30px;
     border-radius: 20px 0px 20px 0;
-    animation: is-boucing 4s ease-in-out alternate infinite;
 }
 
 .inline{
@@ -80,13 +85,16 @@ main {
     display: inline-block;
     margin-left: 2rem;
     margin-top: 2rem;
+    transition: all 0.5s;
 
 }
 
 .inline:hover {
-    animation: mouseEmCima 1s ease-out forwards;
-    border-radius: 10px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
+
 
 @keyframes mouseEmCima {
     0%{
@@ -100,13 +108,26 @@ main {
 }
 
 
+
+
 .inline p{
     margin-top: 3px;
     font-size: 1rem;
 }
 
-@keyframes is-boucing{
-    to{
-        transform: translateY(5px);
+@keyframes animate{
+    0%{
+        transform: translateY(-800px);  
+        color: #fff;
+    }
+    60%{
+        transform: translateY(0);
+    }
+    80%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+        color: #6e55fd;
     }
 }
