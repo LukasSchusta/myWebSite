@@ -53,6 +53,7 @@ main {
 .chave-pix {
     cursor: pointer;
     display: inline-block;
+    max-width: 75%;
     padding: 10px;
     border: 1px solid black;
     border-radius: 0px 20px 0px 20px;
