@@ -6,4 +6,5 @@ function copiarTexto(){
     textoCopiado.setSelectionRange(0, 99999)
     document.execCommand("copy");
     
+    
 }
